@@ -29,7 +29,7 @@ function RecipeCreate ({ setRecipes, createRecipe }) {
 
   return (
     <form name='create' onSubmit={handleSubmit}>
-      <table>
+      <table className='create-recipe'>
         <tbody>
           <tr>
             <td>

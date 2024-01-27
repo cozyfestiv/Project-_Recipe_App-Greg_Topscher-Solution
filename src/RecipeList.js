@@ -11,12 +11,12 @@ function RecipeList ({ recipes, deleteHandler }) {
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
+            <th className='recipe-heading'>Name</th>
+            <th className='recipe-heading'>Cuisine</th>
+            <th className='recipe-heading'>Photo</th>
+            <th className='recipe-heading'>Ingredients</th>
+            <th className='recipe-heading'>Preparation</th>
+            <th className='recipe-heading'>Actions</th>
           </tr>
         </thead>
         <tbody>

@@ -3,6 +3,7 @@ import './App.css';
 import RecipeCreate from './RecipeCreate';
 import RecipeList from './RecipeList';
 import RecipeData from './RecipeData';
+import lasso from './assets/lasso.png';
 
 function App () {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -15,13 +16,13 @@ function App () {
     recipeCopy.splice(indexToDelete, 1);
     setRecipes(recipeCopy);
   };
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
 
   return (
     <div className='App'>
-      <header>
-        <h1>Delicious Food Recipes</h1>
+      <header className='header'>
+        <img src={lasso} alt='cartoon lasso' className='header-img'></img>
+        <h1 className='header-title'>Recipe Roundup</h1>
+        <img src={lasso} alt='cartoon lasso' className='header-img'></img>
       </header>
       <RecipeList deleteHandler={deleteRecipe} recipes={recipes} />
       <RecipeCreate createRecipe={createRecipe} />
